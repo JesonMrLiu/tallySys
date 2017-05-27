@@ -1,0 +1,16 @@
+.login-item {
+    padding: 20rpx 0rpx;
+}
+
+.login-item .input {
+    border: 1rpx solid lightgray;
+    padding:10rpx;
+    margin:0rpx 10rpx;
+}
+
+.login-item .submitBtn {
+    border-radius: 0rpx;
+    background-color: red;
+    color: #fff;
+    margin:0rpx 10rpx;
+}

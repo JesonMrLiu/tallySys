@@ -1,0 +1,93 @@
+
+.tally-title {
+    width: 100%;
+    padding: 20rpx 0rpx;
+    text-align: center;
+    font-size: 45rpx;
+    font-weight: bold;
+}
+
+.tally-top-main {
+    background-color: #4f758d;
+    padding:30rpx 20rpx;
+    color: #fff;
+}
+
+.tally-top-main .top-info-center{
+    text-align: center;
+    margin-top: 40rpx;
+}
+
+.tally-top-main .top-info-center text  {
+  display: block;
+}
+
+.tally-top-main .top-info-center .top-info-center-amount {
+  font-size: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.tally-top-main .top-info-left, .tally-top-main .top-info-right {
+  display: inline-block;
+  width: 49%;
+  font-size: 26rpx;
+  margin-top: 48rpx;
+  /*padding: 0rpx 20rpx;*/
+}
+
+.tally-top-main .top-info-left text {
+  display: block;
+}
+
+.tally-top-main .top-info-right text {
+  display: block;
+}
+
+.tally-top-main .top-info-left {
+  border-right: 1rpx solid #fff;
+  text-align: center;
+}
+
+.tally-top-main .top-info-right {
+  text-align: center;
+}
+
+.tally-top-main .top-info-center .top-info-center-text {
+  font-size: 26rpx;
+}
+
+.tally-info-main {
+    padding: 10rpx 0rpx;
+    font-size: 24rpx; 
+}
+
+.tally-info-main .info {
+    padding: 28rpx 20rpx;
+    display: flex;
+    border:1rpx solid #e6e6e6;
+    margin-bottom:2rpx;
+    margin-left:4rpx;
+    margin-right:4rpx;
+}
+
+.tally-info-main .info .info-title {
+  width: 150rpx;
+  padding-left: 20rpx;
+}
+
+.tally-into-main .info view {
+    width: 200rpx;
+}
+
+.tally-info-main .info-value {
+
+}
+
+.tally-info-main .info-red {
+    color: #ff0000;
+}
+
+.tally-info-main .info-green {
+    color: #008000;
+}
+

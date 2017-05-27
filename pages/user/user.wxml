@@ -1,0 +1,8 @@
+<view class="container">
+    <!-- 顶部用户图片等 -->
+    <view class="user-top">
+        <image class="user-icon" src="/images/icons/caton.jpg"></image>
+        <view class="user_name">刘先森</view>
+    </view>
+    <view class="classname"></view>
+</view>

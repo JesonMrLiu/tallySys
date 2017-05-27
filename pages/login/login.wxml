@@ -1,0 +1,24 @@
+<view class='container'>
+    <view class="login-main" style="height:{{winHeight}}px;padding-top:70rpx;">
+        <form bindsubmit="doSubmit">
+            <!-- 用户名 -->
+            <view class="login-item">
+                <input class="input username" name="username" placeholder="用户名" bindblur="" bindfocus="getFocus"/>
+            </view>
+            <!-- 密码 -->
+            <view class="login-item">
+                <input class="input pwd" name="pwd" password="true" placeholder="密码" bindblur="" bindfocus="getFocus"/>
+            </view>
+            <!-- 是否记住密码 -->
+            <view class="login-item" style="padding: 10rpx;font-size:30rpx;">
+                <text>记住密码：</text>
+                <switch type="switch" class="remember_pwd"/>
+            </view>
+            <view class="login-item" style="display:{{errorShow}};"><text style="font-size:25rpx;padding-left:13rpx;color:red;">{{loginError}}</text></view>
+            <!-- 登录按钮 -->
+            <view class="login-item">
+                <button class="submitBtn" formType="submit">登陆</button>
+            </view>
+        </form>
+    </view>
+</view>

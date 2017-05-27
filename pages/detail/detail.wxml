@@ -1,0 +1,60 @@
+<view class="container">
+    <!-- 标题 -->
+    <!--<view class="tally-title">
+        <text>日消费小结</text>
+    </view>-->
+    <view class="tally-top-main">
+        <view class="top-info">
+          <view class="top-info-center">
+              <text class="top-info-center-amount">0</text>
+              <text class="top-info-center-text">5月消费总计</text>
+          </view>
+          <view class="top-info-left">
+              <text class="top-info-line-left-amount">17.5</text>
+              <text class="top-info-line-left-text">本日消费</text>
+          </view>
+          <view class="top-info-right">
+              <text class="top-info-line-right-date">2017-05-21</text>
+              <text class="top-info-line-right-text">消费日期</text>
+          </view>
+        </view>
+    </view>
+    <!-- 累计消费数额 -->
+    <view class="tally-info-main">
+        <!-- 收支类型 -->
+        <view class="info">
+            <text class="info-title">收支类型：</text>
+            <text class="info-value">支出</text>
+        </view>
+        <!-- 消费日期 -->
+        <view class="info">
+            <text class="info-title">消费日期：</text>
+            <text class="info-value">2017-01-16</text>
+        </view>
+        <!-- 消费金额 -->
+        <view class="info">
+            <text class="info-title">消费金额：</text>
+            <text class="info-value info-green">￥23.5</text>
+        </view>
+        <!-- 消费类型 -->
+        <view class="info">
+            <text class="info-title">消费类型：</text>
+            <text class="info-value">消费等</text>
+        </view>
+        <!-- 付款方 -->
+        <view class="info">
+            <text class="info-title">付款方：</text>
+            <text class="info-value">自己</text>
+        </view>
+        <!-- 收款方 -->
+        <view class="info">
+            <text class="info-title">收款方：</text>
+            <text class="info-value">超市、其他</text>
+        </view>
+        <!-- 备注 -->
+        <view class="info">
+            <text class="info-title">备注：</text>
+            <text class="info-value">早、中、晚餐：5 + 12 + 35 = 5</text>
+        </view>
+    </view>
+</view>

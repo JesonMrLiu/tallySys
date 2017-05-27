@@ -1,0 +1,20 @@
+.user-top {
+    width: 100%;
+    height: 400rpx;
+    /*background-image: url('/images/beijing/xingkong.jpg');*/
+    background-color: #4f758d;
+    text-align: center;
+}
+
+.user-top .user-icon {
+    width:200rpx;
+    height:200rpx;
+    border-radius:50%;
+    margin-top:60rpx;
+}
+
+.user-top .user_name {
+    color:#fff;
+    font-weight:bold;
+
+}

@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="main">
+      <form bindsubmit="saveSubmit">
+        <!-- 标题 -->
+        <view class="main-item">
+            <input class="input" name="title" placeholder="账目标题" bindblur=""/>
+        </view>
+        <!-- 账目日期 -->
+        <view class="main-item">
+            <picker class="picker" mode="date" end="{{currentDate}}" name="tallyDateStr" value="{{zmrq}}" bindchange="zmrqChange">{{zmrq}}</picker>
+        </view>
+        <!-- 收支类型 -->
+        <view class="main-item">
+            <picker class="picker" mode="selector" name="payType" bindchange="szlxChange" value="{{szlx}}" range="{{szlxValues}}">{{szlx}}</picker>
+        </view>
+        <!-- 收支金额 -->
+        <view class="main-item">
+            <input class="input" type="number" name="amount" placeholder="收支金额" bindblur=""/>
+        </view>
+        <!-- 账目类型 -->
+        <view class="main-item">
+            <picker class="picker" mode="selector" name="type" bindchange="zmlxChange" value="{{zmlx}}" range="{{zmlxValues}}">{{zmlx}}</picker>
+        </view>
+        <!-- 付款方 -->
+        <view class="main-item">
+            <input class="input" placeholder="付款方" name="payer" bindblur=""/>
+        </view>
+        <!-- 收款方 -->
+        <view class="main-item">
+            <input class="input" placeholder="收款方" name="payee" bindblur=""/>
+        </view>
+        <!-- 备注 -->
+        <view class="main-item">
+            <textarea class="textarea" name="remark" style="width:{{textareaWidth}}px" placeholder="备注"/>
+        </view>
+        <!-- 按钮 -->
+        <view class="main-item">
+            <button class="saveBtn" formType="submit">保存</button>
+        </view>
+      </form>
+    </view>
+</view>

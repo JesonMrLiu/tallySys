@@ -1,0 +1,71 @@
+<view class="page-bottom">
+    <view class="page-content">
+        <view class="closeBtn">
+          <image src="/images/icons/close.png" bindtap="searchModal"></image>
+        </view>
+        <form bindsubmit="searchSubmit">
+          <view class="search-item">
+              <picker class="picker" mode="selector" name="searchYear" value="{{searchYear}}" range="{{yearArray}}" bindchange="yearChange">{{searchYear}}</picker>
+          </view>
+          <view class="search-item">
+              <picker class="picker" mode="selector" name="searchMonth" value="{{searchMonth}}" range="{{monthArray}}" bindchange="monthChange">{{searchMonth}}</picker>
+          </view>
+          <view class="search-item">
+              <button class="searchBtn" formType="submit">查询</button>
+          </view>
+        </form>
+    </view>
+  </view>
+<scroll-view class="container {{leftSearchShow ? 'c-state1' : ''}}" scroll-y="true" bindscrolltolower="lower" style="height:{{scrollHeight}}px;">
+  <!-- 顶部最基本的信息展示 -->
+  <view class="tally-top-main">
+      <!-- 搜索 -->
+      <view class="top-search" bindtap="searchModal">
+          <text>刷选</text>
+          <image src="{{searchImage}}"></image>
+      </view>
+      <view class="top-info">
+        <view class="top-info-center">
+            <text class="top-info-center-amount">0</text>
+            <text class="top-info-center-text">5月消费总计</text>
+        </view>
+        <view class="top-info-left">
+            <text class="top-info-line-left-amount">17.5</text>
+            <text class="top-info-line-left-text">本月收入</text>
+        </view>
+        <view class="top-info-right">
+            <text class="top-info-line-right-date">34.5</text>
+            <text class="top-info-line-right-text">本月支出</text>
+        </view>
+      </view>
+  </view>
+
+<view wx:for='{{tallys}}' wx:for-item='item' wx:key=''>
+  <view class="tallyItems">
+      <view class="item">
+        <view class="item-top">
+          <text class="item-left">2017-05-21</text>
+          <text class="item-right">收入：0</text>
+        </view>
+        <view class="item-tally" bindtouchend="monthDetailTally" bindtouchstart="touchStartTally" bindlongtap="removeTally">
+          <image src="/images/icons/gouwulan.png"></image>
+          <text class="item-left">消费小计</text>
+          <text class="item-right">23.5</text>
+        </view>
+        <view style="border-top:1rpx solid #e6e6e6;margin:0rpx 44rpx;"></view>
+        <view class="item-tally" bindtouchend="monthDetailTally" bindtouchstart="touchStartTally" bindlongtap="removeTally">
+          <image src="/images/icons/gouwulan.png"></image>
+          <text class="item-left">消费小计</text>
+          <text class="item-right">23.5</text>
+        </view>
+      </view>
+  </view>
+</view>
+</scroll-view>
+
+
+
+<!-- 弹出框 -->
+<modal title="温馨提示" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="removeConfirm" bindcancel="removeCancel">
+    确定要删除这条记录吗？
+</modal>

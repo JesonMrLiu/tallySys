@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/tally/tally",
+    "pages/detail/detail",
+    "pages/tally/add/add",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4f758d",
+    "navigationBarTitleText": "记账系统",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#39b5de",
+    "backgroundColor": "#4f758d",
+    "borderStyle": "white",
+    "list":[
+      {
+        "pagePath": "pages/tally/tally",
+        "iconPath": "images/icons/list-1.png",
+        "selectedIconPath": "images/icons/list-2.png",
+        "text": "账单"
+      },
+      {
+        "pagePath": "pages/tally/add/add",
+        "iconPath": "images/icons/edit-1.png",
+        "selectedIconPath": "images/icons/edit-2.png",
+        "text": "添加"
+      }
+    ]
+  }
+}
